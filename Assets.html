@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMS - Assets</title>
+
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="Assets.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="cont">
+    <div class="sideb">
+        <h2>EMS</h2>
+        <div class="menu">
+            <i class="fa-solid fa-house"></i>
+            <a href="adminDash.html">Dashboard</a>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-users"></i>
+            <a href="Employee.html">Employees</a>
+        </div>
+        <div class="menu active">
+            <i class="fa-solid fa-box"></i>
+            <a href="Assets.html">Assets</a>
+        </div>
+        <div class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="adminLogin.html">Logout</a>
+        </div>
+    </div>
+    <div class="right asset-r">
+        <div class="top">
+            <h2>Assets</h2>
+            <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+                Add Asset
+            </button>
+        </div>
+        <div class="asset-box">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search assets...">
+            </div>
+            <table class="asset-table">
+                <thead>
+                    <tr>
+                        <th>Asset ID</th>
+                        <th>Asset Name</th>
+                        <th>Category</th>
+                        <th>Assigned To</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AST001</td>
+                        <td>Laptop</td>
+                        <td>Laptop</td>
+                        <td>Arun Kumar</td>
+                        <td><span class="status assigned">Assigned</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AST001</td>
+                        <td>Laptop</td>
+                        <td>Laptop</td>
+                        <td>Arun Kumar</td>
+                        <td><span class="status assigned">Assigned</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AST001</td>
+                        <td>Laptop</td>
+                        <td>Laptop</td>
+                        <td>Arun Kumar</td>
+                        <td><span class="status assigned">Assigned</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AST002</td>
+                        <td>Monitor</td>
+                        <td>Monitor</td>
+                        <td>Abu</td>
+                        <td><span class="status assigned">Assigned</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>AST003</td>
+                        <td>Keyboard</td>
+                        <td>Peripheral</td>
+                        <td>-</td>
+                        <td><span class="status available">Available</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>AST004</td>
+                        <td>Mouse</td>
+                        <td>Peripheral</td>
+                        <td>Karthi</td>
+                        <td><span class="status assigned">Assigned</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>AST005</td>
+                        <td>Laptop</td>
+                        <td>Laptop</td>
+                        <td>-</td>
+                        <td><span class="status repair">Under Repair</span></td>
+                        <td>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-pen"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="asset-bottom">
+                <!-- <span>Showing 1 to 5 of 65 assets</span> -->
+                <div class="pagination">
+                    <span>‹</span>
+                    <span class="current">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>›</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
