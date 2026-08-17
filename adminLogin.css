@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
@@ -13,7 +12,6 @@ body {
   height: 100vh;
   display: flex;
 }
-
 .left {
   width: 50%;
   height: 100%;
@@ -68,7 +66,7 @@ body {
   width: 400px;
 }
 
-/* HEADING */
+/* head */
 .login-box h2 {
   text-align: center;
   font-size: 27px;
@@ -81,27 +79,18 @@ body {
   font-size: 13px;
   margin-bottom: 35px;
 }
-
-
-/* INPUTS */
 .inp {
   position: relative;
   margin-bottom: 14px;
 }
-
 .inp input {
   width: 100%;
   height: 42px;
-
   border: 1px solid #c3c8cf;
   border-radius: 5px;
-
   background: #eeeeee;
-
   padding: 0 40px 0 14px;
-
   font-size: 13px;
-
   outline: none;
 }
 
@@ -119,9 +108,7 @@ body {
 
   color: #172033;
 }
-
-
-/* TERMS */
+/* Tms */
 .termsandcond {
   font-size: 11px;
   margin: 17px 0;
@@ -139,33 +126,21 @@ body {
 .terms:hover {
   text-decoration: underline;
 }
-
-
-/* LOGIN BUTTON */
-
 .login-btn {
   width: 100%;
   height: 43px;
   border: none;
   border-radius: 5px;
-
   background: #075bc1;
-  
    background: darkblue;
   color: white;
-
   font-size: 13px;
-
   cursor: pointer;
 }
 
 .login-btn:hover {
   background: #064fa8;
 }
-
-
-/* FORGOT PASSWORD */
-
 .forgot {
   display: block;
   text-align: center;
@@ -174,16 +149,10 @@ body {
   color: darkblue;
   text-decoration: none;
 }
-
 .forgot:hover {
   text-decoration: underline;
 }
-
-
-/* MOBILE */
-
 @media (max-width: 600px) {
-
   .cont {
     display: block;
     min-height: 100vh;
@@ -221,9 +190,7 @@ body {
 
   .right {
     width: 100%;
-    /* padding: 15px 20px 20px; */
     background: #061735;
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -232,48 +199,38 @@ body {
   .login-box {
     width: 100%;
     max-width: 300px;
-
     padding: 16px 15px;
-
     background: white;
     border-radius: 8px;
   }
-
   .login-box h2 {
     font-size: 18px;
     margin-bottom: 3px;
   }
-
   .txt {
     font-size: 9px;
     margin-bottom: 12px;
   }
-
   .inp {
     margin-bottom: 6px;
   }
-
   .inp input {
     height: 32px;
     font-size: 9px;
   }
-
   .inp i {
     top: 9px;
     right: 10px;
     font-size: 11px;
   }
-
   .termsandcond {
     font-size: 8px;
     margin: 7px 0;
   }
-
   .login-btn {
     height: 32px;
     font-size: 9px;
   }
-
   .forgot {
     font-size: 8px;
     margin-top: 7px;

@@ -1,131 +1,55 @@
 .asset-r {
     padding: 20px;
-    height: 100vh;
 }
-
-.asset-r .top h2 {
-    font-size: 18px;
-}
-
-.add-btn {
-    background: #1769e0;
-    color: white;
-    border: none;
-    padding: 9px 14px;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-.asset-box {
+.assetbox {
     background: white;
-    border-radius: 6px;
     padding: 15px;
-    box-shadow: 0 2px 5px #ddd;
 }
-
-.search-box {
-    width: 300px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    padding: 0 8px;
+.searchbox {
     margin-bottom: 15px;
 }
-
-.search-box i {
-    color: lightgray;
-    font-size: 11px;
+.searchbox input {
+    padding: 8px;
+    width: 250px;
 }
-
-.search-box input {
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 10px;
-}
-
-.asset-table {
+.assettable {
     width: 100%;
     border-collapse: collapse;
+}
+.assettable th,
+.assettable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.status {
+    padding: 4px 7px;
     font-size: 11px;
 }
-
-.asset-table th {
-    background: lightblue;
-    padding: 10px;
-    text-align: left;    
-    font-size: 14px;
-}
-.asset-table td {
-    padding: 12px 10px;
-    border-top: 1px solid #eee;
-}
-
-.asset-table th:nth-child(5),
-.asset-table td:nth-child(5),
-.asset-table th:nth-child(6),
-.asset-table td:nth-child(6) {
-    text-align: center;
-}
-
-.asset-table td i {
-    color: #1769e0;
-    margin: 0 6px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.status {
-    padding: 5px 8px;
-    border-radius: 4px;
-    font-size: 10px;
-}
-
 .assigned {
     background: #dff4e8;
-    color: #23834d;
 }
-
 .available {
-    background: #dcecff;
-    color: #1769c2;
+    background: #e5f0ff;
 }
-
 .repair {
-    background: #f8dede;
-    color: #d64b3c;
+    background: #fff0d5;
 }
-
+.assettable i {
+    color: blue;
+    margin-right: 18px;
+}
 .asset-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-top: 15px;
-    font-size: 10px;
-}
-
-.pagination {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    justify-content: center;
 }
 .pagination span {
-    cursor: pointer;
-}
-.pagination .current {
-    background: #1769e0;
-    color: white;
-    padding: 6px 9px;
-    border-radius: 3px;
+    padding: 5px 8px;/
 }
 .asset-box {
     animation: fadeIn 5s ease;
 }
-/* @keyframes fadeIn {
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(50px);
@@ -134,4 +58,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-} */
+}
