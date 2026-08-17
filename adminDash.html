@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <title>EMS Dashboard</title>
+
+<link rel="stylesheet" href="common.css" />
+<link rel="stylesheet" href="adminDash.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cont">
+      <!-- Sidebar -->
+      <div class="sideb">
+        <h2>EMS</h2>
+
+        <div class="menu active">
+          <i class="fa-solid fa-house"></i>
+          <a href="adminDash.html">Dashboard</a>
+        </div>
+
+        <div class="menu">
+          <i class="fa-solid fa-users"></i>
+          <a href="Employee.html">Employees</a>
+        </div>
+
+        <div class="menu">
+          <i class="fa-solid fa-box"></i>
+          Assets
+        </div>
+
+        <div class="menu">
+          <i class="fa-solid fa-file-lines"></i>
+          Requests
+        </div>
+
+        <div class="logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <a href="adminLogin.html" class="logoutlink">Logout</a>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="right">
+        <!-- Top -->
+        <div class="top">
+          <h2>Dashboard</h2>
+
+          <div class="admin">
+            <i class="fa-solid fa-circle-user"></i>
+            Admin
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon b">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+              <p>Total Employees</p>
+              <h2>52</h2>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon g">
+              <i class="fa-solid fa-box"></i>
+            </div>
+
+            <div>
+              <p>Total Assets</p>
+              <h2>65</h2>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon o">
+              <i class="fa-solid fa-file-circle-check"></i>
+            </div>
+
+            <div>
+              <p>Total Requests</p>
+              <h2>18</h2>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon pu">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+
+            <div>
+              <p>Pending Requests</p>
+              <h2>7</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom">
+          <!-- Recent Activities -->
+          <div class="box">
+            <h3>Recent Activities</h3>
+
+            <div class="activity">
+              <span>Arun Kumar added as new employee</span>
+              <small>10:30 AM</small>
+            </div>
+
+            <div class="activity">
+              <span>Laptop (AST001) assigned to Priya Sharma</span>
+              <small>09:45 AM</small>
+            </div>
+
+            <div class="activity">
+              <span>Rahul Raj submitted leave request</span>
+              <small>Yesterday</small>
+            </div>
+
+            <div class="activity">
+              <span>Monitor (AST002) returned by Karthik M</span>
+              <small>2 days ago</small>
+            </div>
+
+            <div class="activity">
+              <span>New asset Keyboard (AST005) added</span>
+              <small>2 days ago</small>
+            </div>
+
+            <a href="" class="t">View All</a>
+          </div>
+
+          <!-- Pending Requests -->
+          <div class="box">
+            <h3>Pending Requests</h3>
+
+            <table>
+              <tr>
+                <th>Type</th>
+                <th>Count</th>
+                <th>View</th>
+              </tr>
+
+              <tr>
+                <td>Leave Requests</td>
+                <td>5</td>
+                <td>
+                  <i class="fa-solid fa-eye"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Asset Requests</td>
+                <td>3</td>
+                <td>
+                  <i class="fa-solid fa-eye"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Other Requests</td>
+                <td>2</td>
+                <td>
+                  <i class="fa-solid fa-eye"></i>
+                </td>
+              </tr>
+            </table>
+
+            <a href="" class="tt">View All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

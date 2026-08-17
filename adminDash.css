@@ -1,0 +1,149 @@
+/* =========================
+   ADMIN DASHBOARD
+   ========================= */
+
+/* Top */
+
+.top h2 {
+    font-size: 18px;
+}
+
+.admin {
+    font-size: 13px;
+}
+
+.admin i {
+    margin-right: 5px;
+}
+
+/* =========================
+   DASHBOARD CARDS
+   ========================= */
+
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    width: 25%;
+    padding: 18px;
+    display: flex;
+    gap: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px lightgray;
+}
+
+.card p {
+    font-size: 11px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.card-icon i {
+    font-size: 16px;
+}
+
+/* Card colors */
+
+.b {
+    background: #1769e0;
+}
+
+.g {
+    background: #20a464;
+}
+
+.o {
+    background: #e9820c;
+}
+
+.pu {
+    background: #5140c7;
+}
+
+/* =========================
+   BOTTOM SECTION
+   ========================= */
+
+.bottom {
+    display: flex;
+    gap: 15px;
+}
+
+.box {
+    background: white;
+    width: 50%;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px #ddd;
+}
+
+.box h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   RECENT ACTIVITIES
+   ========================= */
+
+.activity {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    font-size: 11px;
+}
+
+.activity small {
+    color: #777;
+}
+
+/* =========================
+   PENDING REQUESTS TABLE
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+th {
+    text-align: left;
+    background: #f5f6f8;
+    padding: 12px 15px;
+}
+
+td {
+    padding: 14px 15px;
+    border-top: 1px solid #eee;
+}
+
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3) {
+    text-align: center;
+}
+
+.tt {
+    padding-left: 10px;
+}

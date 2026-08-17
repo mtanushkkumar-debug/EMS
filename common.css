@@ -1,0 +1,118 @@
+/* =========================
+   COMMON STYLES
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* Common page container */
+
+.cont {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.sidebar,
+.sideb {
+    width: 200px;
+    background: #061735;
+    color: white;
+    padding: 20px 15px;
+    flex-shrink: 0;
+}
+
+.sidebar h2,
+.sideb h2 {
+    margin-bottom: 30px;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.menu i {
+    width: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Active menu */
+
+.menu.active {
+    background: #1769e0;
+}
+
+.menu:hover {
+    background: #1769e0;
+}
+
+/* =========================
+   LOGOUT
+   ========================= */
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 180px;
+    padding: 12px 10px;
+    font-size: 13px;
+}
+
+.logout i {
+    width: 20px;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* =========================
+   COMMON RIGHT CONTENT
+   ========================= */
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+/* =========================
+   COMMON TOP SECTION
+   ========================= */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top h2 {
+    margin: 0;
+}
