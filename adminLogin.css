@@ -5,7 +5,7 @@
 }
 body {
   font-family: Arial, sans-serif;
-  min-height: 100vh;
+  height: 100vh;
 }
 .cont {
   width: 100%;
@@ -65,15 +65,12 @@ body {
 .login-box {
   width: 400px;
 }
-
-/* head */
 .login-box h2 {
   text-align: center;
   font-size: 27px;
   color: black;
   margin-bottom: 8px;
 }
-
 .txt {
   text-align: center;
   font-size: 13px;
@@ -93,19 +90,14 @@ body {
   font-size: 13px;
   outline: none;
 }
-
 .inp input:focus {
   border-color: #075bc1;
 }
-
 .inp i {
   position: absolute;
-
   right: 13px;
   top: 13px;
-
   font-size: 14px;
-
   color: #172033;
 }
 /* Tms */
@@ -155,7 +147,7 @@ body {
 @media (max-width: 600px) {
   .cont {
     display: block;
-    min-height: 100vh;
+  height: 100%;
     background: #061735;
   }
 
