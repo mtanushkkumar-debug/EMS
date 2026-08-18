@@ -104,29 +104,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  .employee-r {
-    padding: 12px;
-  }
-
-  .empbox {
-    padding: 12px;
-  }
-
-  .employee-r .top h2 {
-    font-size: 18px;
-  }
-
-  .empbox .search-box {
-    width: 100%;
-  }
-
-  .employee-bottom {
-    justify-content: center;
-  }
-
-  .pagination {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}

@@ -26,10 +26,10 @@
     padding: 4px 7px;
     font-size: 11px;
 }
-.assigned {
+.assign {
     background: #dff4e8;
 }
-.available {
+.avail {
     background: #e5f0ff;
 }
 .repair {
@@ -39,7 +39,7 @@
     color: blue;
     margin-right: 18px;
 }
-.asset-bottom {
+.assetbtm{
     text-align: center;
     margin-top: 15px;
 }
