@@ -1,7 +1,7 @@
 .asset-r {
     padding: 20px;
 }
-.assetbox {
+.assetbox{
     background: white;
     padding: 15px;
 }
@@ -48,6 +48,10 @@
 }
 .asset-box {
     animation: fadeIn 5s ease;
+}
+.current{
+    background-color: #1769e0;
+    border-radius: 20%;
 }
 @keyframes fadeIn {
     from {

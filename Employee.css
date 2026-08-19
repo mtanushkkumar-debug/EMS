@@ -13,7 +13,7 @@
   padding: 20px;
   overflow-x: auto;
 }
-.empbox .search-box {
+.empbox .searchbox {
   margin-bottom: 20px;
 }
 .employee-table {
@@ -63,7 +63,7 @@
   color: #061735;
 }
 
-.employee-bottom {
+.emp-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
