@@ -111,7 +111,7 @@ body {
 .add-btn:hover {
   background: var(--dblue);
 }
-.search-box {
+.searchbox {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -122,13 +122,12 @@ body {
   border-radius: 6px;
   padding: 0 10px;
 }
-.search-box i {
+.searchbox i {
   color: var(--lgrey);
   font-size: 13px;
 }
-.search-box input {
+.searchbox input {
   width: 100%;
-  min-width: 0;
   border: none;
   font-size: 13px;
   background: transparent;
