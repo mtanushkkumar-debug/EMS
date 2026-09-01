@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "name": "Kumar",
+    "department": "Development",
+    "role": "Team Lead",
+    "teamLead": null,
+    "status": "Active"
+  },
+  {
+    "id": "2",
+    "name": "Siva",
+    "department": "Development",
+    "role": "Team Lead",
+    "teamLead": null,
+    "status": "Active"
+  },
+  {
+    "id": "3",
+    "name": "Arun Kumar",
+    "department": "Development",
+    "role": "Employee",
+    "teamLead": "Kumar",
+    "status": "Active"
+  },
+  {
+    "id": "4",
+    "name": "Thangam",
+    "department": "Development",
+    "role": "Employee",
+    "teamLead": "Kumar",
+    "status": "On Leave"
+  },
+  {
+    "id": "5",
+    "name": "Tamil",
+    "department": "Development",
+    "role": "Employee",
+    "teamLead": "Siva",
+    "status": "On Leave"
+  },
+  {
+    "id": "6",
+    "name": "Anbu",
+    "department": "Testing",
+    "role": "Employee",
+    "teamLead": "Kumar",
+    "status": "Active"
+  },
+  {
+    "id": "7",
+    "name": "Karthi",
+    "department": "Design",
+    "role": "Employee",
+    "teamLead": "Siva",
+    "status": "Active"
+  },
+  {
+    "id": "8",
+    "name": "Muthu",
+    "department": "Development",
+    "role": "Intern",
+    "teamLead": "Kumar",
+    "status": "Active"
+  },
+  {
+    "id": "9",
+    "name": "Sakthi",
+    "department": "Testing",
+    "role": "Intern",
+    "teamLead": "Siva",
+    "status": "Pending"
+  },
+  {
+    "id": "10",
+    "name": "Velu",
+    "department": "Design",
+    "role": "Employee",
+    "teamLead": "Kumar",
+    "status": "Active"
+  },
+  {
+    "id": "11",
+    "name": "Vikram",
+    "department": "Development",
+    "role": "Employee",
+    "teamLead": "Siva",
+    "status": "Inactive"
+  },
+  {
+    "id": "12",
+    "name": "Arjun",
+    "department": "Testing",
+    "role": "Employee",
+    "teamLead": "Kumar",
+    "status": "Active"
+  },
+  {
+    "id": "13",
+    "name": "Dhanush",
+    "department": "Development",
+    "role": "Intern",
+    "teamLead": "Siva",
+    "status": "Active"
+  },
+  {
+    "id": "14",
+    "name": "Surya",
+    "department": "Design",
+    "role": "Employee",
+    "teamLead": "Kumar",
+    "status": "On Leave"
+  },
+  {
+    "id": "15",
+    "name": "Vijay",
+    "department": "Development",
+    "role": "Team Lead",
+    "teamLead": null,
+    "status": "Active"
+  },
+  {
+    "id": "16",
+    "name": "Rajinikanth",
+    "department": "HR",
+    "role": "Team Lead",
+    "teamLead": null,
+    "status": "Active"
+  },
+  {
+    "id": "17",
+    "name": "Kamal",
+    "department": "Development",
+    "role": "Employee",
+    "teamLead": "Vijay",
+    "status": "Active"
+  },
+  {
+    "id": "18",
+    "name": "Jeeva",
+    "department": "Testing",
+    "role": "Intern",
+    "teamLead": "Rajinikanth",
+    "status": "Pending"
+  },
+  {
+    "id": "19",
+    "name": "Vasu",
+    "department": "HR",
+    "role": "Employee",
+    "teamLead": "Rajinikanth",
+    "status": "Active"
+  },
+  {
+    "id": "20",
+    "name": "Madhavan",
+    "department": "Design",
+    "role": "Employee",
+    "teamLead": "Vijay",
+    "status": "Active"
+  }
+]

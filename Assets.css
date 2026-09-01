@@ -1,65 +1,193 @@
 .asset-r {
     padding: 20px;
+
 }
-.assetbox{
+
+.assetbox {
     background: white;
     padding: 15px;
 }
+
+/* Search */
 .searchbox {
     margin-bottom: 15px;
+
 }
+
 .searchbox input {
     padding: 8px;
     width: 250px;
 }
+
+/* =========================
+   SCROLLABLE TABLE BODY
+   ========================= */
+
 .assettable {
     width: 100%;
-    border-collapse: collapse;
+    table-layout: fixed;
+    height: 400px;
 }
+
+/* Header */
+.assettable thead {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Body becomes scrollable */
+.assettable tbody {
+    display: block;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Rows */
+.assettable tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Cells */
 .assettable th,
 .assettable td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
 }
+
+/* Header stays fixed */
+.assettable thead th {
+    background: white;
+}
+
+/* Status */
 .status {
     padding: 4px 7px;
     font-size: 11px;
 }
-.assign {
+
+.assigned {
     background: #dff4e8;
 }
-.avail {
+
+.available {
     background: #e5f0ff;
 }
-.repair {
+
+.under-repair {
     background: #fff0d5;
 }
+
+/* Action icons */
 .assettable i {
     color: blue;
     margin-right: 18px;
 }
-.assetbtm{
+
+/* Pagination */
+.assetbtm {
     text-align: center;
     margin-top: 15px;
 }
+
 .pagination span {
-    padding: 5px 8px;/
+    padding: 5px 8px;
 }
-.asset-box {
-    animation: fadeIn 5s ease;
-}
-.current{
+
+.current {
     background-color: #1769e0;
-    border-radius: 20%;
 }
+
+/* Animation */
+.assetbox {
+    animation: fadeIn 5s;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* =========================
+   MODAL
+   ========================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modalbox {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+.modalheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.modalheader h2 {
+    margin: 0;
+}
+
+#closeModal {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modalbox label {
+    display: block;
+    margin-top: 10px;
+}
+
+.modalbox input,
+.modalbox select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#saveAsset {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #1769e0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#employeeList {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.employee-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.employee-option:hover {
+  background: #f1f1f1;
 }

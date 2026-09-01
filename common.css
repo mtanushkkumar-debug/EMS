@@ -13,31 +13,49 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  width: 100%;
-}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif !important;
   background: var(--vlgrey);
   color: var(--dgrey);
-}
-.cont {
+}.cont {
   display: flex;
-  min-height: 100vh;
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
+
 .sideb {
   width: 200px;
-  min-height: 100vh;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
   background: var(--vdgrey);
   color: var(--whit);
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
+}
+
+.right {
+  margin-left: 200px;
+
+  width: calc(100% - 200px);
+  height: 100vh;
+
+  min-width: 0;
+
+  padding: 20px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .sideb h2 {
-  margin-bottom: 30px;
-  font-size: 22px;
+  margin-bottom: 30px!important;
+  font-size: 22px !important;
 }
 .menu {
   display: flex;
@@ -107,7 +125,7 @@ body {
   cursor: pointer;
   white-space: nowrap;
   transition: 0.2s;
-}
+} 
 .add-btn:hover {
   background: var(--dblue);
 }
@@ -129,13 +147,10 @@ body {
   width: 100%;
   border: none;
   font-size: 13px;
-  background: transparent;
+ 
 }
 
-
-
 table {
-  width: 100%;
   border-collapse: collapse;
 }
 /* //mob */
@@ -145,22 +160,20 @@ table {
   }
   .sideb {
     width: 100%;
-    min-height: auto;
     padding: 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
-    overflow-x: auto;
   }
   .sideb h2 {
     margin: 0 15px 0 5px;
-    font-size: 20px;
+    font-size: 20px ;
+    padding-top: 25px ;
   }
   .menu {
     margin: 0;
     padding: 9px 10px;
-    flex-shrink: 0;
   }
   .menu a {
     font-size: 12px;
@@ -184,6 +197,6 @@ table {
     align-items: flex-start;
   }
   .top h2 {
-    font-size: 20px;
+    font-size: 20px ;
   }
 }

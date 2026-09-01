@@ -3,9 +3,11 @@
   min-width: 0;
   padding: 25px;
 }
+
 .employee-r .top h2 {
   font-size: 22px;
 }
+
 .empbox {
   background: white;
   border: 1px solid #e5e5e5;
@@ -13,15 +15,33 @@
   padding: 20px;
   overflow-x: auto;
 }
-.empbox .searchbox {
-  margin-bottom: 20px;
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
+
+.filter-row .searchbox {
+  width: 300px;
+}
+
+.role-filter {
+  width: 180px;
+  height: 40px;
+  font-size: 14px;
+}
+
 .employee-table {
   width: 100%;
   min-width: 750px;
   border-collapse: collapse;
   table-layout: fixed;
 }
+
 .employee-table th {
   font-size: 14px;
   color: black;
@@ -29,6 +49,7 @@
   padding: 14px 12px;
   border-bottom: 1px solid #eeeeee;
 }
+
 .employee-table td {
   font-size: 14px;
   text-align: left;
@@ -36,6 +57,7 @@
   border-bottom: 1px solid #f0f0f0;
   vertical-align: middle;
 }
+
 .active-badge {
   background: #dff4e8;
   color: #23834d;
@@ -43,6 +65,7 @@
   padding: 5px 8px;
   border-radius: 5px;
 }
+
 .leave-badge {
   background: #fff0d5;
   color: #b87900;
@@ -74,6 +97,10 @@
   margin: 0;
 }
 
+.active {
+  background-color: #1769c2;
+}
+
 .page-link {
   font-size: 13px;
   color: #333;
@@ -84,6 +111,65 @@
   background: #1769c2;
   border-radius: 4px;
   color: white;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.modalbox {
+  width: 550px;
+  max-height: 90%;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.modalheader {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+#closeModal {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modalbody {
+  padding: 20px 25px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.modalbody label {
+  display: block;
+  margin: 15px 0 5px;
+}
+
+.modalbody input,
+.modalbody select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+.save-employee {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 7px;
+  background: #1769e0;
+  color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -102,5 +188,13 @@
   .employee-table {
     min-width: 750px;
   }
-}
 
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .role-filter {
+    width: 100%;
+  }
+}

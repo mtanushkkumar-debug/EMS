@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>EMS Dashboard</title>
-
 <link rel="stylesheet" href="common.css" />
 <link rel="stylesheet" href="adminDash.css" />
     <link
@@ -27,10 +26,10 @@
                     <a href="Assets.html"style="text-decoration=none">Assets</a>
 
         </div>
-        <!-- <div class="menu">
+        <div class="menu">
           <i class="fa-solid fa-file-lines"></i>
           Requests
-        </div> -->
+        </div>
         <div class="logout">
           <i class="fa-solid fa-right-from-bracket"></i>
           <a href="adminLogin.html" class="logoutlink">Logout</a>
@@ -39,10 +38,11 @@
       <div class="right">
         <div class="top">
           <h2>Dashboard</h2>
+          <div id="quote"></div>
           <div class="admin">
             <i class="fa-solid fa-circle-user"></i>
             Admin
-            <i class="fa-solid fa-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down" id="drop"></i>
           </div>
         </div>
         <div class="cards">
@@ -52,7 +52,7 @@
             </div>
             <div>
               <p>Total Employees</p>
-              <h2>52</h2>
+              <h2 id="totalcount">52</h2>
             </div>
           </div>
           <div class="card">
@@ -84,30 +84,15 @@
           </div>
         </div>
         <div class="bottom">
-          <div class="box">
-            <h3>Recent Activities</h3>
-            <div class="activity">
-              <span>AK added as new employee</span>
-              <small>10:30 AM</small>
-            </div>
-            <div class="activity">
-              <span>Laptop  assigned to priya</span>
-              <small>09:45 AM</small>
-            </div>
-            <div class="activity">
-              <span>RR submitted leave request</span>
-              <small>Yesterday</small>
-            </div>
-            <div class="activity">
-              <span>Monitor returned by karthi</span>
-              <small>2 days ago</small>
-            </div>
-            <div class="activity">
-              <span>New asset Keyboard added</span>
-              <small>2 days ago</small>
-            </div>
-            <a href="" class="t" style="color: blue; text-decoration: none;">View All</a>
-          </div>
+            <div class="box">
+      <h3>Recent Activities</h3>
+
+      <div id="activityList"></div>
+
+      <a href="" class="t" style="color: blue; text-decoration: none;">
+        View All
+      </a>
+    </div>
           <div class="box">
             <h3>Pending Requests</h3>
             <table>
@@ -144,4 +129,7 @@
       </div>
     </div>
   </body>
+  <script src="adminDash.js">
+   
+  </script>
 </html>

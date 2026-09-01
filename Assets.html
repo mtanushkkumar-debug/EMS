@@ -1,159 +1,145 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>EMS - Assets</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>EMS - Assets</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="Assets.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
 
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="Assets.css " />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="cont">
-      <div class="sideb">
-        <h2>EMS</h2>
-        <div class="menu">
-          <i class="fa-solid fa-house"></i>
-          <a href="adminDash.html">Dashboard</a>
-        </div>
-        <div class="menu">
-          <i class="fa-solid fa-users"></i>
-          <a href="Employee.html">Employees</a>
-        </div>
-        <div class="menu active">
-          <i class="fa-solid fa-box"></i>
-          <a href="Assets.html">Assets</a>
-        </div>
-        <div class="logout">
-          <i class="fa-solid fa-right-from-bracket"></i>
-          <a href="adminLogin.html">Logout</a>
-        </div>
+<body>
+  <div class="cont">
+    <!-- Sidebar -->
+    <div class="sideb">
+      <h2>EMS</h2>
+      <div class="menu">
+        <i class="fa-solid fa-house"></i>
+        <a href="adminDash.html">Dashboard</a>
       </div>
-      <div class="right asset-r">
-        <div class="top">
-          <h2>Assets</h2>
-          <button class="add-btn">
-            <i class="fa-solid fa-plus"></i>
-            Add Asset
-          </button>
-        </div>
-        <div class="assetbox">
-          <div class="searchbox">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search assets" />
-          </div>
-          <table class="assettable">
-            <thead>
-              <tr>
-                <th>Asset ID</th>
-                <th>Asset Name</th>
-                <th>Category</th>
-                <th>Assigned To</th>
-                <th>Status</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>AST001</td>
-                <td>Laptop</td>
-                <td>Laptop</td>
-                <td>HK</td>
-                <td><span class="status assigned">Assigned</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>AST001</td>
-                <td>Laptop</td>
-                <td>Laptop</td>
-                <td>BK</td>
-                <td><span class="status assign">Assigned</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>AST001</td>
-                <td>Laptop</td>
-                <td>Laptop</td>
-                <td>AK</td>
-                <td><span class="status assigned">Assigned</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>AST002</td>
-                <td>Monitor</td>
-                <td>Monitor</td>
-                <td>Abu</td>
-                <td><span class="status assign">Assigned</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
+      <div class="menu">
+        <i class="fa-solid fa-users"></i>
+        <a href="Employee.html">Employees</a>
+      </div>
+      <div class="menu active">
+        <i class="fa-solid fa-box"></i>
+        <a href="Assets.html">Assets</a>
+      </div>
+      <div class="logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <a href="adminLogin.html">Logout</a>
+      </div>
+    </div>
 
-              <tr>
-                <td>AST003</td>
-                <td>Keyboard</td>
-                <td>Peripheral</td>
-                <td>-</td>
-                <td><span class="status avail">Available</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
+    <!-- Main Content -->
+    <div class="right asset-r">
+      <div class="top">
+        <h2>Assets</h2>
+        <button class="add-btn" id="addasset">
+          <i class="fa-solid fa-plus"></i>
+          Add Asset
+        </button>
+      </div>
 
-              <tr>
-                <td>AST004</td>
-                <td>Mouse</td>
-                <td>Peripheral</td>
-                <td>Karthi</td>
-                <td><span class="status assigned">Assigned</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
-
-              <tr>
-                <td>AST005</td>
-                <td>Laptop</td>
-                <td>Laptop</td>
-                <td>-</td>
-                <td><span class="status repair">Under Repair</span></td>
-                <td>
-                  <i class="fa-solid fa-eye"></i>
-                  <i class="fa-solid fa-pen"></i>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="assetbtm">
-            <!-- <span>Showing 1 to 5 of 65 assets</span> -->
-            <div class="pagination">
-              <span>&lsaquo;</span>
-              <span class="current">1</span>
-              <span>2</span>
-              <span>3</span>
-              <span>4</span>
-              <span>5</span>
-              <span>&rsaquo;</span>
+      <div class="assetbox">
+        <!-- Add Asset Modal -->
+        <div class="modal" id="assetModal">
+          <div class="modalbox">
+            <div class="modalheader">
+              <h2>Add Asset</h2>
+              <span id="closeModal">&times;</span>
             </div>
+
+            <label>Asset ID</label>
+            <input type="text" id="assetId" />
+
+            <label>Asset Name</label>
+            <input type="text" id="assetName" />
+
+            <label>Category</label>
+            <select id="assetCategory">
+              <option value="Laptop">Laptop</option>
+              <option value="Monitor">Monitor</option>
+              <option value="Peripheral">Peripheral</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <button id="saveAsset">Add Asset</button>
+          </div>
+        </div>
+
+        <!-- Assign Asset Modal -->
+        <div class="modal" id="assignModal">
+          <div class="modalbox">
+            <div class="modalheader">
+              <h2>Assign Asset</h2>
+              <span id="closeAssign">&times;</span>
+            </div>
+
+            <label>Employee</label>
+<input 
+  type="text" 
+  id="employeeSearch" 
+  placeholder="Search by ID or name..." 
+  autocomplete="off"
+/>
+
+<div id="employeeList"></div>
+            <label>Assigned Date</label>
+            <input type="date" id="assignedDate" />
+
+            <label>Service Date</label>
+            <input type="date" id="serviceDate" />
+
+            <label>Return Date</label>
+            <input type="date" id="returnDate" />
+
+            <button id="assignAsset">Assign Asset</button>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div class="searchbox">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="assetSearch" placeholder="Search assets" />
+        </div>
+
+      
+<div class="table-container">
+  <table class="assettable">
+    <thead>
+      <tr>
+        <th>Asset ID</th>
+        <th>Asset Name</th>
+        <th>Category</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody id="assetTableBody"></tbody>
+  </table>
+</div>
+
+
+        <!-- Pagination
+        <div class="assetbtm">
+          <div class="pagination">
+            <span>&lsaquo;</span>
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&rsaquo;</span>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div> -->
+
+  <script src="Assets.js"></script>
+</body>
 </html>
